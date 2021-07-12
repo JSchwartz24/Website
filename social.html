@@ -30,14 +30,66 @@
                 </div>
             </div>
 
-            <div class="content-wrapper">
-                <div class="two-column-wrapper">
-                    <div class="profile-img-wrapper">
-                        <img src="images/profile.jpg">
-                    </div>
+            <div class="intro-wrapper">
+                <div class="intro-text">
+                    <h1>Find more of me at my Socials</h1>
                 </div>
             </div>
 
+            <div class="content-wrapper">
+                <div class="social-items-wrapper">
+                    
+                    <a href="https://www.linkedin.com/in/jasonkschwartz/">
+                        <div class="social-item-wrapper">
+                            <div class="social-img-background" style="background-image: url(images/portfolio12.jpg)"></div>
+                            
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                    <img src="images/logos/in.png">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="social-item-wrapper">
+                        <div class="social-img-background" style="background-image: url(images/portfolio2.jpg)"></div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/quip.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-item-wrapper">
+                        <div class="social-img-background" style="background-image: url(images/portfolio3.jpg)"></div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/devcamp.png">
+                            </div>
+                        </div>
+                    </div>
+            </div>
         </div>
     </body>
+    <script>
+        const socialItems = document.querySelectorAll('.social-item-wrapper')
+    
+        socialItems.forEach(socialItem => {
+            socialItem.addEventListener('mouseover', () => {
+                socialItem.childNodes[1].classList.add('img-darken');
+            })
+    
+            socialItem.addEventListener('mouseout', () => {
+                socialItem.childNodes[1].classList.remove('img-darken');
+            })
+        })
+
+        socialItems.forEach(socialItem => {
+            socialItem.addEventListener('onclick', () => {
+                socialItem.childNodes[1].classList.add('img-darken');
+            })
+        })
+    </script>
 </html>

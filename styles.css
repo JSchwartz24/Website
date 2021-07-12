@@ -53,6 +53,23 @@ body {
 .active-nav-link a {
   color: black !important;
 }
+/* Intro Styles */
+.intro-text p:nth-child(1) {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.intro-text p:nth-child(2) {
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 250%;
+}
+
+.intro-text p:nth-child(3) {
+  font-family: myriad pro regular;
+  font-size: 30px;
+  line-height: 30px;
+}
 
 /* Portfolio Styles */
 .portfolio-items-wrapper {
@@ -122,4 +139,22 @@ body {
 
 .profile-content-wrapper h1 {
   color: lightseagreen;
+}
+
+/* Social page */
+
+.social-items-wrapper {
+  display: grid;
+}
+
+.social-item-wrapper {
+  position: relative;
+}
+
+.social-img-background {
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
