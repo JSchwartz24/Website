@@ -1,6 +1,5 @@
 /* Mater Styles*/
 body {
-  
   font-family: "Lato", sans-serif;
   margin: 0px;
   padding: 0px;
@@ -67,7 +66,7 @@ section {
 .intro-text p:nth-child(1) {
   font-family: calibri;
   font-weight: bold;
-  color:#6d6d6d;
+  color: #6d6d6d;
   font-size: 22px;
 }
 
@@ -75,20 +74,20 @@ section {
   font-family: calibri;
   font-weight: bold;
   letter-spacing: 1px;
-  color:#1a1a1a;
+  color: #1a1a1a;
   font-size: 60px;
 }
 
 .intro-text p:nth-child(3) {
   font-family: myriad pro regular;
-  color:#403e3e;
+  color: #403e3e;
   font-size: 30px;
   line-height: 30px;
 }
 
 .intro-text {
   position: relative;
-  margin:50px;
+  margin: 50px;
 }
 
 .intro-text button {
@@ -104,12 +103,12 @@ section {
 
 .down-cv {
   background-color: #0b0b0b;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
 }
 
 button:hover {
-  transform:scale(1.1);
+  transform: scale(1.1);
 }
 
 /* SKILLS Styles */
@@ -117,7 +116,7 @@ button:hover {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
-  color:#1a1a1a;
+  color: #1a1a1a;
   font-size: 50px;
   text-align: center;
 }
@@ -179,6 +178,11 @@ button:hover {
 .img-darken {
   transition: 1s;
   filter: brightness(10%);
+}
+
+.C {
+  color: white;
+  font-size: 20px;
 }
 
 /* About page */
