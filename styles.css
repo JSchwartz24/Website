@@ -137,6 +137,7 @@ button:hover {
 .portfolio-item-wrapper {
   position: relative;
   display: flex;
+  width: 100%;
 }
 
 .portfolio-img-background {
