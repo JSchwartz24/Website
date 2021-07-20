@@ -136,8 +136,6 @@ button:hover {
 
 .portfolio-item-wrapper {
   position: relative;
-  display: flex;
-  width: 100%;
 }
 
 .portfolio-img-background {
@@ -158,8 +156,8 @@ button:hover {
   align-content: center;
   height: 100%;
   text-align: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 30%;
+  padding-right: 30%;
 }
 
 .logo-wrapper img {
