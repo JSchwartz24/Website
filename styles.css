@@ -1,4 +1,4 @@
-/* Mater Styles*/
+/****************** Master Styles ******************/
 body {
   font-family: "Lato", sans-serif;
   margin: 0px;
@@ -18,7 +18,7 @@ section {
   grid-template-columns: 1fr;
 }
 
-/* Nav Styles*/
+/****************** Nav Styles ******************/
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
@@ -33,6 +33,11 @@ section {
   margin-right: 20px;
   font-size: 0.9em;
   text-transform: uppercase;
+}
+
+/* Used to hide bars used in mobile mode */
+.bars {
+  display: none;
 }
 
 .nav-link-wrapper {
@@ -62,7 +67,8 @@ section {
 .active-nav-link a {
   color: black !important;
 }
-/* Intro Styles */
+
+/****************** Intro Styles ******************/
 .intro-text p:nth-child(1) {
   font-family: calibri;
   font-weight: bold;
@@ -111,7 +117,7 @@ button:hover {
   transform: scale(1.1);
 }
 
-/* SKILLS Styles */
+/****************** SKILLS Styles ******************/
 .skills-title h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -128,7 +134,7 @@ button:hover {
   height: 125px;
 }
 
-/* Portfolio Styles */
+/****************** Portfolio Styles ******************/
 .portfolio-items-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -182,7 +188,7 @@ button:hover {
   filter: brightness(10%);
 }
 
-/* About page */
+/****************** About page ******************/
 .two-column-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -200,8 +206,7 @@ button:hover {
   color: lightseagreen;
 }
 
-/* Social page */
-
+/****************** Social Page ******************/
 .social-items-wrapper {
   display: grid;
 }
@@ -216,4 +221,111 @@ button:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/****************** Phone Display ******************/
+@media only screen and (max-width: 450px) {
+  /******** Nav Styles ********/
+  .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+  }
+
+  .left-side {
+    display: flex;
+  }
+
+  /* Used to hide home menu item when on a phone */
+  .left-side > .nav-link-wrapper {
+    display: none;
+  }
+
+  .nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+  }
+
+  .nav-wrapper > .left-side > .bars > div {
+    height: 4px;
+    background-color: black;
+    margin: 5px 0;
+    border-radius: 25px;
+    transition: 0.3s;
+  }
+
+  .bars {
+    width: 30px;
+    display: block;
+    margin: 1em 0 0 1em;
+  }
+
+  .bars ul {
+    display: none;
+  }
+
+  .bars:hover ul {
+    display: block;
+  }
+
+  .bars ul li {
+    list-style: none;
+  }
+
+  .one {
+    width: 30px;
+  }
+
+  .two {
+    width: 20px;
+  }
+
+  .three {
+    width: 25px;
+  }
+
+  .bars:hover div {
+    width: 30px;
+  }
+
+  .nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+  }
+
+  .nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+  }
+
+  .nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+  }
+
+  .nav-link-wrapper a:hover {
+    color: black;
+  }
+
+  .active-nav-link {
+    border-bottom: 1px solid black;
+  }
+
+  .active-nav-link a {
+    color: black !important;
+  }
+
+  /******** Portfolio Styles ********/
+  .portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  /******** About page ********/
+  .two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
