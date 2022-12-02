@@ -323,11 +323,19 @@ button:hover {
     color: black !important;
   }
 
-  /******** Portfolio Styles ********/
+  /******** Portfolio Images on Index Page Styles ********/
   .portfolio-items-wrapper {
     display: grid;
     grid-template-columns: 1fr;
   }
+
+  /******** Portfolio Page Styles ********/
+
+  h1.todo {
+   color: white;
+   text-decoration: none;
+  }
+
 
   /******** About page ********/
   .two-column-wrapper {
