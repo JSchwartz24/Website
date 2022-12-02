@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Social</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="social_styles.css">
+    </head>
+    <body>
+        <div class="container"> 
+            <div class="nav-wrapper">
+                <div class="left-side">
+                    <div class="nav-link-wrapper">
+                        <a href="index.html">Home</a>
+                    </div>
+
+                    <div class="nav-link-wrapper">
+                        <a href="about.html">About</a>
+                    </div>
+                    
+                    <div class="nav-link-wrapper">
+                        <a href="social.html">Social</a>
+                    </div>
+
+                    <div class="nav-link-wrapper active-nav-link">
+                        <a href="portfolio.html">Portfolio</a>
+                    </div>
+                </div>
+                
+                <div class="right-side">
+                    <div class="brand">
+                        <div>JASON SCHWARTZ</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="intro-wrapper">
+                <div class="intro-text">
+                    <h1>Check out some of my work</h1>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="social-items-wrapper">
+
+                    <a href="https://github.com/JSchwartz24" target="_blank" rel="noopener norferrer">
+                        <div class="social-item-wrapper">
+                            <div class="social-img-background" style="background-image: url(images/portfolio2.jpg)"></div>
+                            
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                    <img src="images/logos/git.png">
+                                </div>
+                                <h1 class="todo">To-Do List</h1>
+                            </div>
+                        </div>
+                    </a>
+            </div>
+        </div>
+    </body>
+    <script>
+        const socialItems = document.querySelectorAll('.social-item-wrapper')
+    
+        socialItems.forEach(socialItem => {
+            socialItem.addEventListener('mouseover', () => {
+                socialItem.childNodes[1].classList.add('img-darken');
+            })
+    
+            socialItem.addEventListener('mouseout', () => {
+                socialItem.childNodes[1].classList.remove('img-darken');
+            })
+        })
+
+        socialItems.forEach(socialItem => {
+            socialItem.addEventListener('onclick', () => {
+                socialItem.childNodes[1].classList.add('img-darken');
+            })
+        })
+    </script>
+</html>
